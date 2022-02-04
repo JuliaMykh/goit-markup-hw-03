@@ -109,6 +109,9 @@ p {
   padding: 10px 32px;
   min-width: 136px;
   margin-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: var(--main-white-color);
   font-family: inherit;
   font-weight: 700;
@@ -163,21 +166,33 @@ p {
 }
 
 /* Футер */
-.footer {
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--black-background-color);
 }
 .logo-white {
   color: var(--main-white-color);
 }
-.adress-link {
+.address-link {
+  /* margin-top: 20px;
+  margin-bottom: 9px; */
   color: var(--main-white-color);
   font-size: 14px;
   line-height: 1.7;
+}
+.address {
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .footer-contacts .link {
   color: var(--footer-mail-tel-color);
   font-size: 14px;
   line-height: 1.7;
+}
+.link.first {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 /* Страница Портфолио */
