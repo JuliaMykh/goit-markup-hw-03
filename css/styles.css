@@ -48,6 +48,7 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  border: 5px solid tomato;
 }
 /* Хедер */
 .header {
@@ -64,19 +65,43 @@ p {
 .logo-black {
   color: var(--header-color);
 }
+
 .site-nav {
+  display: block;
   display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
 }
 .contacts {
+  display: block;
   display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-part {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+.site-nav .item:last-child {
+  margin-right: 331px;
+}
 .contacts .item + .item {
   margin-left: 50px;
 }
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
