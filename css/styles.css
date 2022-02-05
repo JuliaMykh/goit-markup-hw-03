@@ -48,7 +48,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid tomato;
 }
 /* Хедер */
 .header {
@@ -166,8 +165,16 @@ p {
   background-color: var(--main-blue-color);
 }
 /* Наши приемущества */
+
 .h2-title-benefits {
   display: none;
+}
+.benefits-list {
+  display: flex;
+}
+
+.benefits-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .benefits {
   font-size: 14px;
@@ -187,6 +194,12 @@ p {
 .job {
   padding-top: 0;
 }
+.job-list {
+  display: flex;
+}
+.job-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Наша команда */
 .section-title.team {
   margin-bottom: 50px;
@@ -194,17 +207,24 @@ p {
 .team {
   background-color: var(--team-background-color);
 }
+.team-list {
+  display: flex;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
-  text-align: inherit;
+  text-align: center;
   margin-bottom: 10px;
 }
 .prof {
   font-size: 16px;
   line-height: 1.9;
   margin-bottom: 30px;
+  text-align: center;
 }
 .photo {
   margin-bottom: 30px;
@@ -243,12 +263,26 @@ p {
 /* Страница Портфолио */
 
 /* Фильтры */
+.buttons-port {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50;
+  padding-left: 0;
+}
+.buttons-port .item:not(:last-child) {
+  margin-right: 30px;
+}
 .buttons-port .button-portfolio {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  background: var(--team-background-color);
+  border-color: transparent;
+  border-radius: 4px;
 }
 .buttons-port .button-portfolio:hover,
 .buttons-port .button-portfolio:focus {
@@ -259,7 +293,21 @@ p {
 .h1-header-portfolio {
   display: none;
 }
-
+.portfolio-list {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 0; */
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portfolio-list > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .link-porfolio > .header-portfolio {
   color: var(--header-color);
   font-weight: 700;
