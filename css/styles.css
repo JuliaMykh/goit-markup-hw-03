@@ -9,6 +9,7 @@
   --black-background-color: #2f303a;
   --team-background-color: #f5f4fa;
   --border-color: #ececec;
+  --border-color-card: #eeeeee;
 }
 body {
   background-color: var(--main-white-color);
@@ -150,12 +151,6 @@ p {
   text-transform: uppercase;
 }
 .button {
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 136px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
   color: var(--main-white-color);
   font-family: inherit;
   font-weight: 700;
@@ -163,7 +158,14 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--main-blue-color);
+
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 /* Наши приемущества */
 
 .h2-title-benefits {
@@ -181,6 +183,7 @@ p {
   line-height: 1.14;
   text-align: left;
   text-transform: uppercase;
+
   margin-bottom: 10px;
 }
 .benefits-text {
@@ -267,8 +270,9 @@ p {
   display: block;
   display: flex;
   justify-content: center;
+
   margin-top: 0;
-  margin-bottom: 50;
+  margin-bottom: 50px;
   padding-left: 0;
 }
 .buttons-port .item:not(:last-child) {
@@ -288,25 +292,27 @@ p {
 .buttons-port .button-portfolio:focus {
   color: var(--main-white-color);
   background-color: var(--main-blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Портфолио */
 .h1-header-portfolio {
   display: none;
 }
 .portfolio-list {
-  display: block;
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: 0; */
   margin-bottom: 0;
-  padding-left: 0;
-  margin-top: -30px;
+  padding: 0;
   margin-left: -30px;
+  margin-top: -30px;
 }
-.portfolio-list > .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
+.portfolio-list .item {
+  border: 1px solid var(--border-color-card);
+
   margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .link-porfolio > .header-portfolio {
   color: var(--header-color);
@@ -314,9 +320,17 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
 }
 .link-porfolio > .p-portfolio {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
+
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
