@@ -209,6 +209,10 @@ p {
 .section-title.team {
   margin-bottom: 50px;
 }
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team {
   background-color: var(--team-background-color);
 }
@@ -221,18 +225,16 @@ p {
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .prof {
   font-size: 16px;
-  line-height: 1.9;
-  padding-bottom: 30px;
+  line-height: 1.19;
   text-align: center;
 }
 .photo {
-  padding-bottom: 30px;
 }
 
 /* Футер */
@@ -277,7 +279,7 @@ p {
   padding-left: 0;
 }
 .buttons-port .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 .buttons-port .button-portfolio {
   font-family: inherit;
